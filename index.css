@@ -1,13 +1,38 @@
-body{
-    background-color: #232121;
+.wrapper {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
 }
 
-.container {
-    background-color: #ffffff;
-    border-radius: 24px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    /* justify-content: center;
-    align-items: center; */
+/* The red div on the left */
+.red {
+    width: 40%; /* Adjust the width as per your need */
+    /* background-color: #ffcccc; */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Container for the right section */
+.right-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Adjust as per your need */
+}
+
+/* Stacking the blue and green divs on top of each other */
+.blue, .green {
+    /* background-color: #cce5ff; for blue */
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Space between blue and green divs */
+}
+
+
+
+div {
+    word-wrap: break-word; /* Prevents text from overflowing */
+    overflow: auto; /* Add scroll if content exceeds the div */
 }
